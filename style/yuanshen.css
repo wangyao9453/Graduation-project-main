@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    touch-action: pan-y;
+    white-space: nowrap;
+
+}
+.desktop{
+    width: 100dvw;
+    height: 130dvh;
+}

@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    touch-action: pan-y;
+}
+
+a {
+    text-decoration: none;
+}
+
+#page1 {
+    /* width: 1335px; */
+    width: 100dvw;
+    height: 100dvh;
+    /* background-color: aqua; */
+    /* display: inline-block; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#page1_vide {
+    /* width: 100%; */
+    /* height: 100%; */
+    overflow: hidden;
+    position: fixed;
+    background-attachment: fixed;
+    display: flex;
+    /* background-color: yellowgreen; */
+
+}
+
+#shade {
+    width: 100%;
+    height: 200dvh;
+    position: absolute;
+    /* background-attachment: fixed; */
+    object-fit: contain;
+    /* background-color: rgba(83, 82, 82, 90%); */
+    z-index: 30;
+}
+
+#page1_vide video {
+    /* min-height: 100%; */
+    /* min-width: 100%; */
+    background-size: cover;
+    filter: brightness(10%);
+}
+
+#page1_bar {
+    width: 30%;
+    height: 220px;
+    /* background-color: rgba(240, 232, 232, 0.5); */
+    position: fixed;
+    z-index: 9999;
+}
+
+#page1_iframe {
+    width: 90%;
+    height: 80%;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+#page1_iframe iframe {
+    height: 100%;
+    width: 100%;
+    /* margin-left: 10%; */
+
+    /* background-color: rgb(243, 16, 16); */
+}
+
+.logo {
+    padding: 10px 5px;
+    height: 9dvh;
+    width: 30dvw;
+    display: flex;
+    margin-left: 20px;
+    align-content: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.spin{
+    animation: spin 5s linear infinite;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-left: 5px;
+    object-fit: cover;
+}
+
+#block {
+    width: 100%;
+    height: 30%;
+    /* background-color: aqua; */
+    margin-top: 10%;
+    /* position: fixed; */
+}
+
+#img {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+.img{
+    width: 30px;
+    height: 10%;
+    margin-top: 50px;
+    margin-left: 50%;
+}
+.img img{
+    width: 100%;
+    height: 100%;
+}
+#img img {
+    width: 40%;
+    height: auto;
+    margin-left: 10%;
+    object-fit: cover;
+    position: fixed;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* background-color: brown; */
+}
+
+#button {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+    /* background-color: blue; */
+}
+
+#ling {
+    width: 60%;
+    height: 100%;
+    border-radius: 30px;
+    /* display: flex; */
+    /* background-color: rgba(8, 6, 37, 0.5); */
+}
+
+#san {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+#yi {
+    width: 100px;
+    height: 70px;
+    margin-top: 60%;
+    border-radius: 20px;
+    margin-left: 30%;
+    position: relative;
+    background-color: rgba(83, 82, 82, 90%);
+}
+
+#yi a {
+    width: 100%;
+    height: 100%;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#yi a:hover {
+    border-radius: 20px;
+    background-color: #030303;
+    color: aqua;
+}
+
+#er {
+    width: 100px;
+    height: 70px;
+    margin-top: 60%;
+    margin-left: 30%;
+    border-radius: 20px;
+    background-color: rgba(83, 82, 82, 90%);
+}
+
+#er a {
+    width: 100%;
+    height: 100%;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+#er a:hover {
+    border-radius: 20px;
+    background-color: #030303;
+    color: aqua;
+}
+
+.page2 {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: black; */
+}
+
+#introduce {
+    width: 80%;
+    height: 90%;
+    background-color: aqua;
+}
+
+#strip {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-color: beige;
+}
+
+#strip div {
+    height: 100%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #030303;
+    border-style: none solid;
+}
+
+#strip div a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#content {
+    width: 100%;
+    height: 95%;
+    background-color: black;
+}

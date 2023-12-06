@@ -1,0 +1,703 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    touch-action: pan-y;
+    white-space: nowrap;
+
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.page {
+    width: 100dvw;
+    height: 100dvh;
+    position: fixed;
+    background: url('../img/Backdrop/diamonds_breakground.webp');
+    display: flex;
+    /* background-color: #000000; */
+}
+
+.s-1 {
+    width: 10%;
+    height: 40%;
+}
+
+.s-1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    z-index: 3;
+    margin-left: 178vh;
+    margin-top: 30px;
+}
+
+.s-2 {
+    width: 10%;
+    height: 40%;
+    margin-top: 20vh;
+    margin-left: -10%;
+}
+
+.s-2-1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.s-2-2 {
+    margin-left: 40%;
+}
+
+.s-2-2 img {
+    width: 9%;
+    height: 5%;
+    margin-left: 5px;
+    margin-top: 90px;
+}
+
+.frame {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.middle {
+    width: 80%;
+    height: 80%;
+    /* margin-top: 10%;
+    margin-left: 10%; */
+    /* background-color: aqua; */
+}
+
+.divide {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: black; */
+}
+
+.kind {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* background-color: black; */
+}
+
+.span {
+    width: 30%;
+    height: 100%;
+    /* margin-left: 30px; */
+    border: 1px solid #000000;
+    border-width: 0 1px;
+}
+
+.span a {
+    width: 100%;
+    height: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+
+}
+
+.span a:hover {
+    color: white;
+    background-color: #3778e5;
+
+}
+
+.content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.word {
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transition: all 1s;
+    -moz-transition: all 1s;
+
+    /* background-color: black; */
+}
+
+.under {
+    width: 100%;
+    height: 60%;
+}
+
+
+.yi h1 {
+    font-size: 20px;
+}
+
+.er {
+    width: 100%;
+    height: 85%;
+    /* background-color: azure; */
+}
+
+.yi1 {
+    width: 100%;
+    /* opacity: 0; */
+    height: 10%;
+    /* background-color: aqua; */
+}
+
+.yi1 h1 {
+    font-size: 20px;
+}
+
+.er1 {
+    width: 100%;
+    height: 90%;
+    /* background-color: azure; */
+}
+
+.text {
+    width: 100%;
+    height: 90%;
+
+}
+
+.text p {
+    width: 100%;
+    font-size: 19px;
+    line-height: 36px;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+    text-indent: 2em;
+    /* text-align: center; */
+    /* margin: 10px 0; */
+}
+
+.word2 {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    opacity: 0;
+    margin-top: 40px;
+    transition: all 1s;
+    -moz-transition: all 1s;
+
+}
+
+.under-1 {
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* top: 100px; */
+    /* left: 30%; */
+    /* background-color: aquamarine; */
+    /*border: 1px solid #ccc;*/
+}
+
+.container img {
+    position: absolute;
+    /*把所有图片放在同一个位置*/
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    opacity: 0;
+    /*把所有图片变透明*/
+
+    transition-duration: 0.5s;
+    /*设置过渡时间*/
+}
+
+.container img.on {
+    opacity: 1;
+    /*用于显示图片*/
+}
+
+
+/*左右按钮 按钮用图片更好点,这里为了简便就用大于小于号*/
+.left,
+.right {
+    /* position: absolute;
+    top: 30%; */
+    width: 60px;
+    height: 100px;
+    line-height: 100px;
+    /* background-color: #666; */
+    opacity: 0.5;
+    text-align: center;
+    font-size: 60px;
+    /* color: #111111; */
+    position: absolute;
+    /* display: none; */
+    /*先隐藏按钮*/
+    cursor: pointer;
+    z-index: 99;
+    /*设置鼠标悬停时的样式*/
+}
+
+.left {
+    width: 10%;
+    left: 0;
+    /* background-color: #ff0b0b; */
+}
+
+.right {
+    width: 10%;
+    right: 0;
+}
+
+
+
+.under-2:hover .left,
+.under-2:hover .right {
+    display: block;
+    /*鼠标悬停才容器范围内时显示按钮*/
+}
+
+.left:hover,
+.right:hover {
+    background-color: #0b40ec;
+    color: #ffffff;
+}
+
+/*焦点*/
+#active {
+    /* position: absolute; */
+    /* bottom: 0;
+    max-width: 100%; */
+    padding: 130px;
+    height: 100%;
+    width: 3600px;
+    margin-left: -2700px;
+    /* margin-left: 2150px; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 1s;
+    -moz-transition: all 1s;
+
+
+}
+
+#active li {
+    /* padding: 20px; */
+    list-style: none;
+    float: left;
+    list-style-type: none;
+    /* background-color: #666262; */
+    width: 10%;
+    height: 60px;
+    /* position: relative; */
+    /* border-radius: 100%; */
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.active1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.active1 div {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #676b73;
+
+}
+
+.avatar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.resemble {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+
+.res1 {
+    width: 100px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.head {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #66e0ff;
+}
+
+.head img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    object-fit: scale-down;
+
+}
+
+
+
+.logo {
+    padding: 30px;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    margin-left: -10%;
+    /* align-content: center; */
+    /* justify-content: center; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo img {
+    max-width: 90%;
+    height: auto;
+    position: relative;
+    filter: drop-shadow(0px 0px 3px #000000);
+    object-fit: cover;
+}
+
+.logo-a {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.spin {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.under-2 {
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    justify-content: center;
+    /* background-color: black; */
+}
+
+.above2 {
+    width: 100%;
+    height: 10%;
+}
+
+.under2 {
+    width: 100%;
+    height: 90%;
+}
+
+.word3 {
+    width: 60%;
+    height: 60%;
+    opacity: 0;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    transition:all 1s;
+    -moz-transition: all 1s;
+
+    /* background-color: #000000; */
+}
+
+.above3 {
+    width: 100%;
+    height: 10%;
+}
+
+.under3 {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.under3-1 {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    /* display: flex; */
+}
+
+.under3-2 {
+    width: 20%;
+    height: 90%;
+    display: block;
+    margin-top: -90px;
+    
+    overflow: hidden;
+}
+
+.un {
+    /* min-height: 100%; */
+    min-width: 800px;
+    opacity: 0;
+    transition: all 1s;
+    -moz-transition: all 1s;
+
+}
+
+.un1 {
+    opacity: 1;
+    position: absolute;
+}
+
+.un2 {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+}
+
+.un3 {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+}
+
+.un4 {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+}
+
+.un5 {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+}
+
+.un6 {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+}
+
+.un7 {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+}
+
+.un8 {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+}
+
+.un9 {
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+}
+
+.un ul {
+    width: 100%;
+    height: 100%;
+}
+
+.un ul li {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.un1 ul li {
+    height: 20%;
+    /* background-color: #000000; */
+}
+
+.un8 ul li {
+    height: 20%;
+}
+
+.de {
+    width: 50%;
+    height: 100%;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.de img {
+    width: 10%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.er {
+    padding: 20px 30px;
+    width: 80%;
+    height: 100%;
+}
+
+.er p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+    text-align: center;
+
+    /* font-size: 12px; */
+}
+
+.er-1 {
+    font-size: 20%;
+    color: #676b73;
+    padding: 10px 5px;
+}
+
+.er-2 {
+    color: #676b73;
+    padding-top: -10px;
+}
+
+.de-1 {
+    transform: scaleX(-1);
+}
+
+.under3-2-1 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    /* margin-top: -55px; */
+}
+
+.un3-2 {
+    width: 100%;
+    height: 70px;
+    border-left-style: solid;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.un3-2-1 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#un3-2 {
+    border-left-color: #3778e5;
+    border-left-style: solid;
+    border-width: 3px;
+
+}
+
+.un3-2-1:hover a {
+    color: #3778e5;
+}
+
+.un3-2-1 a {
+    width: 100%;
+    height: 100%;
+    color: #676b73;
+
+}
+
+.active2 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 20px;
+    border-left-color: #3778e5;
+    border-left-style: solid;
+    border-width: 4px;
+    transition: all 0.3s;
+    /* -moz-transition: all 1s; */
+
+}
+
+.active a {
+    width: 100%;
+    height: 100%;
+    color: #676b73;
+
+}
+
+.active:hover {
+    /* border-left-color: #3778e5; */
+    /* border-left-style: solid; */
+    border-width: 3px;
+
+}
+
+.active:hover a {
+    color: #3778e5;
+}
